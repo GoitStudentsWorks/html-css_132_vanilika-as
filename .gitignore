@@ -150,3 +150,6 @@ vite.config.ts.timestamp-*
 
 # OS files
 .DS_Store
+
+# pull requests list
+pullrequests-list.txt
