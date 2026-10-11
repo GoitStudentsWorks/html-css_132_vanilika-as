@@ -11,7 +11,6 @@
 
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
 
   transition:
     opacity 250ms ease,
@@ -21,7 +20,6 @@
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
 }
 
 .mobile-menu-container {
@@ -134,7 +132,6 @@
 .mobile-menu-register:hover,
 .mobile-menu-register:focus {
   background-color: #ffa45f;
-  border-color: #ffa45f;
 }
 
 @media screen and (min-width: 768px) {
