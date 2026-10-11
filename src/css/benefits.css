@@ -1,28 +1,50 @@
-.benefits .container {
-  padding: 40px 20px;
+.benefits {
+  padding: 64px 0;
 }
 
 .section-title.benefits-title {
+  margin-bottom: 32px;
+
   font-size: 40px;
   line-height: 1.2;
-  margin-bottom: 32px;
 }
 
 .benefits-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
+
   padding: 8px 0;
 }
 
 .benefits-list-item {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: row;
+  align-items: flex-start;
   gap: 24px;
+}
+
+.benefits-svg {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+}
+
+.benefits-list-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.benefits-list-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
 }
 
 .benefits-list-description {
@@ -31,60 +53,52 @@
   line-height: 1.5;
 }
 
-.benefits-svg {
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-}
-
-.benefits-list-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.benefits-list-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
-}
-
 .benefits-text {
   margin-bottom: 32px;
 }
 
 .benefits-img {
+  display: block;
+
+  width: 100%;
+  max-width: 335px;
+  height: auto;
+
+  margin: 0 auto;
+
   border-radius: 16px;
 }
 
 @media screen and (min-width: 768px) {
+  .section-title.benefits-title {
+    width: 100%;
+    max-width: 450px;
+  }
+
   .benefits-img {
     width: 522px;
-    height: 494px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .section-title.benefits-title {
-    max-width: 450px;
-    width: 100%;
+    max-width: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .benefits {
+    padding: 112px 0;
+  }
+
   .benefits .container {
-    padding: 112px 64px;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     gap: 80px;
+  }
+
+  .benefits-text {
+    margin-bottom: 0;
   }
 
   .benefits-img {
     width: 616px;
-    height: 586px;
   }
 
   .benefits-text {

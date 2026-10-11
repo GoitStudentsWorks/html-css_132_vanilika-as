@@ -23,17 +23,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 }
 
 .header-logo-img {
   display: block;
-
-  width: 50.4px;
-  height: 35px;
+  width: 72px;
+  height: 50px;
 }
-
 /* =========================
    RIGHT SIDE
 ========================= */
@@ -63,14 +60,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-
   color: #0c0708;
 
   transition: opacity 250ms ease;
 }
 
 /* =========================
-   REGISTER BUTTON
+   REGISTER
 ========================= */
 
 .header-register-btn {
@@ -82,7 +78,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 
   border: 1px solid #ffb780;
@@ -102,23 +97,21 @@
 }
 
 /* =========================
-   MENU BUTTON
+   BURGER
 ========================= */
 
 .header-menu-btn {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 }
 
 .header-menu-icon {
   display: block;
-
   width: 16px;
   height: 12px;
 }
@@ -147,21 +140,15 @@
     height: 72px;
   }
 
+  .header-right {
+    gap: 32px;
+  }
+
   .header-nav {
     display: block;
   }
 
   .header-menu-btn {
     display: none;
-  }
-}
-
-/* =========================
-   DESKTOP — 1440+
-========================= */
-
-@media screen and (min-width: 1440px) {
-  .header-container {
-    height: 72px;
   }
 }
