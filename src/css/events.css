@@ -41,6 +41,7 @@
 
   width: 100%;
   height: 225px;
+  aspect-ratio: 311 / 225;
 
   margin-bottom: 16px;
 
@@ -141,6 +142,7 @@
   .events-list-item-img {
     width: 144px;
     height: 144px;
+    aspect-ratio: 1 / 1;
 
     margin-right: 32px;
     margin-bottom: 0;
