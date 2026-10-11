@@ -86,4 +86,8 @@
     width: 616px;
     height: 586px;
   }
+
+  .benefits-text {
+    margin-bottom: 0;
+  }
 }
