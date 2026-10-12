@@ -9,6 +9,7 @@ const openMenu = () => {
   document.body.style.overflow = 'hidden';
 
   openMenuBtn.setAttribute('aria-expanded', 'true');
+  mobileMenu.setAttribute('aria-hidden', 'false');
 };
 
 const closeMenu = () => {
@@ -16,6 +17,7 @@ const closeMenu = () => {
   document.body.style.overflow = '';
 
   openMenuBtn.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden', 'true');
 };
 
 openMenuBtn.addEventListener('click', openMenu);
