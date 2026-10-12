@@ -7,11 +7,15 @@ const mobileRegisterBtn = document.querySelector('.mobile-menu-register');
 const openMenu = () => {
   mobileMenu.classList.add('is-open');
   document.body.style.overflow = 'hidden';
+
+  openMenuBtn.setAttribute('aria-expanded', 'true');
 };
 
 const closeMenu = () => {
   mobileMenu.classList.remove('is-open');
   document.body.style.overflow = '';
+
+  openMenuBtn.setAttribute('aria-expanded', 'false');
 };
 
 openMenuBtn.addEventListener('click', openMenu);
